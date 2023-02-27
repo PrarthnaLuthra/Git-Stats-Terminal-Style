@@ -45,8 +45,7 @@ jobs:
           
       - name: Update Template
         run: |
-          node updater.js ${{ github.repository_owner }} atom
-          node updater.js ${{ github.repository_owner }} googlelight
+          node updater.js ${{ github.repository_owner }} atom 
         env:
           GHT: ${{ secrets.GHT }}
           
